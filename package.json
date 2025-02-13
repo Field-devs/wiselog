@@ -1,0 +1,57 @@
+{
+  "name": "WiseView",
+  "version": "2.0.0",
+  "description": "WiseView Application",
+  "main": "app/app.js",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-angular-templatecache": "^3.0.0",
+    "gulp-autoprefixer": "^3.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^3.0.0",
+    "gulp-hash-filename": "^3.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-usemin": "^0.3.30",
+    "merge-stream": "^2.0.0",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "start": "npm run start-dev",
+    "start-dev": "gulp server -dev2",
+    "start-homolog": "gulp server",
+    "start-qa": "gulp server -qa",
+    "start-staging": "gulp server -staging",
+    "start-prod": "gulp server -prod",
+    "start-release": "gulp server -release",
+    "start-build": "gulp server-build",
+    "build": "gulp build",
+    "build-azure": "npm i && npm run build",
+    "postinstall": "bower install --no-interactive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "front-end"
+  ],
+  "dependencies": {
+    "angular": "^1.2.32",
+    "bower": "^1.8.14"
+  }
+}
